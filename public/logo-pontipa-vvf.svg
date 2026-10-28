@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs>
+    <linearGradient id="crimsonShield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a81820" />
+      <stop offset="55%" stop-color="#8f141b" />
+      <stop offset="100%" stop-color="#4d080c" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="45%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="45%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Ottagono Esterno Oro / Cremisi Stile Araldico VVF -->
+  <polygon
+    points="74,10 166,10 230,74 230,166 166,230 74,230 10,166 10,74"
+    fill="url(#crimsonShield)"
+    stroke="url(#goldGrad)"
+    stroke-width="7"
+    filter="url(#dropShadow)"
+  />
+
+  <!-- Cornice Ottagonale Interna Filettata Oro -->
+  <polygon
+    points="80,20 160,20 220,80 220,160 160,220 80,220 20,160 20,80"
+    fill="none"
+    stroke="#fbbf24"
+    stroke-width="2"
+    stroke-opacity="0.65"
+  />
+
+  <!-- Raggera / Ghiera Oraria 36h sullo sfondo -->
+  <circle cx="120" cy="116" r="72" fill="#590a0e" fill-opacity="0.55" stroke="url(#goldGrad)" stroke-width="2.5" stroke-dasharray="6 4" />
+
+  <!-- Piccozze / Asce Incrociate dei Vigili del Fuoco -->
+  <g stroke="url(#goldGrad)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Asta Sinistra -> Destra -->
+    <line x1="62" y1="168" x2="176" y2="62" stroke-width="6.5" />
+    <!-- Lama Ascia Destra -->
+    <path d="M164 52 C178 46 190 56 186 72 L170 66 Z" fill="url(#goldGrad)" stroke-width="2" />
+    <path d="M164 58 L152 46" stroke-width="4.5" />
+
+    <!-- Asta Destra -> Sinistra -->
+    <line x1="178" y1="168" x2="64" y2="62" stroke-width="6.5" />
+    <!-- Lama Ascia Sinistra -->
+    <path d="M76 52 C62 46 50 56 54 72 L70 66 Z" fill="url(#goldGrad)" stroke-width="2" />
+    <path d="M76 58 L88 46" stroke-width="4.5" />
+  </g>
+
+  <!-- Granata / Sfera Araldica Centrale con Mini-Griglia Calendario PontiPA -->
+  <circle cx="120" cy="136" r="30" fill="url(#goldGrad)" stroke="#45070a" stroke-width="3" />
+  <circle cx="120" cy="136" r="23" fill="#751016" stroke="#fde68a" stroke-width="1.5" />
+  <!-- Icona Calendario / Ponte stilizzata dentro la Granata -->
+  <rect x="107" y="125" width="26" height="22" rx="3" fill="#8f141b" stroke="#fde68a" stroke-width="2" />
+  <line x1="107" y1="132" x2="133" y2="132" stroke="#fde68a" stroke-width="2" />
+  <circle cx="114" cy="138" r="2" fill="#fbbf24" />
+  <circle cx="120" cy="138" r="2" fill="#fbbf24" />
+  <circle cx="126" cy="138" r="2" fill="#22c55e" />
+  <circle cx="114" cy="143" r="2" fill="#fbbf24" />
+  <circle cx="120" cy="143" r="2" fill="#22c55e" />
+  <circle cx="126" cy="143" r="2" fill="#22c55e" />
+
+  <!-- Colletto della Granata -->
+  <rect x="108" y="101" width="24" height="8" rx="2" fill="url(#goldGrad)" stroke="#45070a" stroke-width="2" />
+
+  <!-- Fiamma Iconica dei Vigili del Fuoco a Lingue Sinuose -->
+  <path
+    d="M120 26
+       C136 44, 158 58, 152 82
+       C149 94, 139 101, 130 103
+       C138 92, 137 78, 128 68
+       C131 80, 125 92, 120 102
+       C115 92, 109 80, 112 68
+       C103 78, 102 92, 110 103
+       C101 101, 91 94, 88 82
+       C82 58, 104 44, 120 26 Z"
+    fill="url(#flameGrad)"
+    stroke="#fde68a"
+    stroke-width="2"
+  />
+  <!-- Cuore Interno Fiamma Oro Chiaro -->
+  <path
+    d="M120 46
+       C129 60, 138 72, 133 88
+       C128 96, 123 100, 120 102
+       C117 100, 112 96, 107 88
+       C102 72, 111 60, 120 46 Z"
+    fill="#fef08a"
+    opacity="0.9"
+  />
+
+  <!-- Cartiglio / Nastro Istituzionale Inferiore "PONTIPA" -->
+  <rect x="38" y="172" width="164" height="32" rx="7" fill="#1c1f24" stroke="url(#goldGrad)" stroke-width="2.5" />
+  <text
+    x="120"
+    y="194"
+    text-anchor="middle"
+    fill="#ffffff"
+    font-family="'Titillium Web', Arial, sans-serif"
+    font-weight="900"
+    font-size="21"
+    letter-spacing="2.5"
+  >
+    PONTI<tspan fill="#fbbf24">VVF</tspan>•PA
+  </text>
+
+  <!-- Fregio Tricolore Italiano alla Base -->
+  <g transform="translate(84, 209)">
+    <rect x="0" y="0" width="24" height="5" rx="1.5" fill="#008c45" />
+    <rect x="24" y="0" width="24" height="5" fill="#ffffff" />
+    <rect x="48" y="0" width="24" height="5" rx="1.5" fill="#cd212a" />
+  </g>
+</svg>
+
